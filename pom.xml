@@ -11,7 +11,7 @@
     </modules>
      <scm>
         <connection>scm:https://github.com/devopstraining1990/maven-multi-module-example.git</connection>
-    <developerConnection>scm:git:https://devopstraining1990:Lakshmi94u@0523@github.com/devopstraining1990/maven-multi-module-example.git</developerConnection>
+    <developerConnection>scm:git:https://devopstraining1990:devops0523@github.com/devopstraining1990/maven-multi-module-example.git</developerConnection>
     <url>https://github.com/devopstraining1990/maven-multi-module-example.git</url>
     <tag>HEAD</tag>
   </scm>
