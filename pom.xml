@@ -9,4 +9,35 @@
         <module>core</module>
         <module>app</module>
     </modules>
+     <scm>
+        <connection>scm:https://github.com/devopstraining1990/maven-multi-module-example.git</connection>
+    <developerConnection>scm:git:https://github.com/devopstraining1990/maven-multi-module-example.git</developerConnection>
+    <url>https://github.com/devopstraining1990/maven-multi-module-example.git</url>
+    <tag>HEAD</tag>
+  </scm>
+    <distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <url>http://3.92.91.254:8081/nexus/content/repositories/releases</url>
+  </repository>
+</distributionManagement>
+    <distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://3.92.91.254:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
+       <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+
+         </plugins>
+   </build>
 </project>
